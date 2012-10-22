@@ -78,8 +78,8 @@ You can generate a PDF or an HTML copy of this guide using
 > probably right... <br/>
 > -- Jerry Coffin (on indentation)
 
-1. ソースファイルのエンコーディングは`UTF-8`とする。 <!-- * Use `UTF-8` as the source file encoding. -->
-2. 1レベルのインデントにつき**スペース**2つとし、タブ文字は使用しない。<!-- * Use two **spaces** per indentation level. No hard tabs. -->
+1. ソースファイルのエンコーディングは`UTF-8`とする。
+2. 1レベルのインデントにつき**スペース**2つとし、タブ文字は使用しない。
 
     ```Ruby
     # good
@@ -94,18 +94,14 @@ You can generate a PDF or an HTML copy of this guide using
     ```
 
 
-3. 改行コードは`LF`を使用する(Windowsユーザは要注意)。<!-- * Use Unix-style line endings. (*BSD/Solaris/Linux/OSX users are covered by default,
-  Windows users have to be extra careful.) -->
+3. 改行コードは`LF`を使用する(Windowsユーザは要注意)。
     * If you're using Git you might want to add the following
     configuration setting to protect your project from Windows line
     endings creeping in:
 
         $ git config --global core.autocrlf true
 
-4. 単項演算子の前後、カンマ・コロンやセミコロンの後、`{`の前後と`}`の前にはスペースを入れる。Rubyインタプリタにとってスペースは意味を為さないが、適切にスペースを入れることは、リーダブルなコードを書くために欠かせない。<!-- * Use spaces around operators, after commas, colons and semicolons, around `{`
-  and before `}`. Whitespace might be (mostly) irrelevant to the Ruby
-  interpreter, but its proper use is the key to writing easily
-  readable code. -->
+4. 単項演算子の前後、カンマ・コロンやセミコロンの後、`{`の前後と`}`の前にはスペースを入れる。Rubyインタプリタにとってスペースは意味を為さないが、適切にスペースを入れることは、リーダブルなコードを書くために欠かせない。
 
     ```Ruby
     sum = 1 + 2
@@ -114,7 +110,7 @@ You can generate a PDF or an HTML copy of this guide using
     [1, 2, 3].each { |e| puts e }
     ```
 
-    累乗の演算子は唯一の例外になる:<!--    The only exception is when using the exponent operator: -->
+    累乗の演算子は唯一の例外になる:
 
     ```Ruby
     # bad
@@ -124,7 +120,7 @@ You can generate a PDF or an HTML copy of this guide using
     e = M * c**2
     ```
 
-5. `(``[`の後、 `]``)`の前にスペースを入れない。<!-- * No spaces after `(`, `[` or before `]`, `)`. -->
+5. `(``[`の後、 `]``)`の前にスペースを入れない。
 
     ```Ruby
     some(arg).other
@@ -132,9 +128,7 @@ You can generate a PDF or an HTML copy of this guide using
     ```
 
 6. `when`は`case`と同じレベルまでインデントする。異論もあるだろうが、"The Ruby
-  Programming Language"、"Programming Ruby"の両者で採られているスタイルだ。<!-- * Indent `when` as deep as `case`. I know that many would disagree
-  with this one, but it's the style established in both the "The Ruby
-  Programming Language" and "Programming Ruby". -->
+  Programming Language"、"Programming Ruby"の両者で採られているスタイル。
 
     ```Ruby
     case
@@ -158,8 +152,7 @@ You can generate a PDF or an HTML copy of this guide using
            end
     ```
 
-7. `def`式と`def`式の間には空行を挟み、メソッド内では論理的なまとまり毎に空行で区切ること。<!-- * Use empty lines between `def`s and to break up a method into logical
-  paragraphs. -->
+7. `def`式と`def`式の間には空行を挟み、メソッド内では論理的なまとまり毎に空行で区切ること。
 
     ```Ruby
     def some_method
@@ -175,7 +168,7 @@ You can generate a PDF or an HTML copy of this guide using
     end
     ```
 
-8. メソッド呼び出しのパラメータが複数行に渡る場合、位置を揃えること。<!-- * Align the parameters of a method call if they span over multiple lines. -->
+8. メソッド呼び出しのパラメータが複数行に渡る場合、位置を揃えること。
 
     ```Ruby
     # starting point (line is too long)
@@ -210,10 +203,9 @@ You can generate a PDF or an HTML copy of this guide using
     end
     ```
 
-9. APIのドキュメンテーションにはRDocとその規約を使うこと。コメントと`def`の間に空行を入れないこと。<!-- * Use RDoc and its conventions for API documentation.  Don't put an
-  empty line between the comment block and the `def`. -->
-10. 1行は80桁以内となるように。<!-- * Keep lines fewer than 80 characters.-->
-11. 行末にスペースを付けない。<!-- * Avoid trailing whitespace. -->
+9. APIのドキュメンテーションにはRDocとその規約を使うこと。コメントと`def`の間に空行を入れないこと。
+10. 1行は80桁以内となるように。
+11. 行末にスペースを付けない。
 
 ## Syntax
 
