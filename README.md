@@ -78,7 +78,7 @@ You can generate a PDF or an HTML copy of this guide using
 > probably right... <br/>
 > -- Jerry Coffin (on indentation)
 
-1. ソースファイルのエンコーディングは`UTF-8`とする。<!-- * Use `UTF-8` as the source file encoding. -->
+1. ソースファイルのエンコーディングは`UTF-8`とする。 <!-- * Use `UTF-8` as the source file encoding. -->
 2. 1レベルのインデントにつき**スペース**2つとし、タブ文字は使用しない。<!-- * Use two **spaces** per indentation level. No hard tabs. -->
 
     ```Ruby
